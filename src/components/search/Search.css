@@ -1,0 +1,133 @@
+.search {
+  height: 76px;
+  width: 100%;
+  display: flex;
+}
+
+.search .search-input {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 38px;
+  padding: 0 32px;
+  background: var(--white, #fff);
+  box-shadow: 0px 10px 50px -8px rgba(0, 0, 0, 0.1);
+}
+
+.search .search-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  height: 50%;
+}
+
+.search .search-input input:focus {
+  outline: 1px solid black;
+}
+
+.search button {
+  width: 316px;
+  height: 100%;
+  background: var(--main-color, #242a3a);
+  border: none;
+  color: #fff;
+  font-family: Geomanist;
+  font-size: 22px;
+}
+
+@media screen and (width < 1400px) {
+  /* search */
+
+  .search {
+    height: 70px;
+  }
+  .search-other {
+    margin-top: -35px;
+  }
+  .search button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (width < 1300px) {
+  .search {
+    height: 60px;
+  }
+}
+
+@media screen and (width < 1100px) {
+  .search {
+    height: 60px;
+  }
+  .search .search-icon-lg {
+    display: none;
+  }
+  .search button {
+    width: 150px;
+  }
+  .search .search-icon-sm {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (width < 900px) {
+  .search {
+    height: 50px;
+  }
+  .search .search-icon-sm {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (width < 700px) {
+  .search {
+    height: 60px;
+    background-color: #fff;
+    gap: 7px;
+  }
+
+  .search .search-input {
+    /* justify-content: space-between; */
+    padding: 0;
+  }
+
+  .search .search-input .add-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search button {
+    width: auto;
+    height: auto;
+    padding: 13px;
+    margin: 6px 7px;
+  }
+  .search .search-icon-sm {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (width < 400px) {
+  .search {
+    height: 40px;
+    background-color: #fff;
+    gap: 7px;
+  }
+  .search .search-input {
+    gap: 20px;
+  }
+  .search .search-input input {
+    width: 100%;
+    margin: 5px;
+  }
+  .search button {
+    width: auto;
+    height: auto;
+    padding: 7px;
+    margin: 0;
+  }
+}

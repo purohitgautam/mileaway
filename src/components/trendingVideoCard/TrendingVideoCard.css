@@ -1,0 +1,88 @@
+.trendingvideo-card {
+  height: 567px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.trendingvideo-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trendingvideo-card .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.trendingvideo-card .hover-engagement {
+  position: absolute;
+  bottom: 5.83%;
+  left: 50%;
+  width: max-content;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  pointer-events: none;
+  background-color: #fff;
+  padding: 9px 32px;
+  border-radius: 50px;
+  width: 80%;
+  height: 60px;
+}
+
+.trendingvideo-card:hover .hover-engagement {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+@media screen and (width < 1400px) {
+  .trendingvideo-card {
+    height: 550px;
+  }
+  .trendingvideo-card .play-btn {
+    width: 100px;
+    aspect-ratio: 1/1;
+  }
+}
+
+@media screen and (width < 1300px) {
+  .trendingvideo-card {
+    height: 500px;
+  }
+}
+
+@media screen and (width < 1200px) {
+  .trendingvideo-card {
+    height: 440px;
+  }
+  .trendingvideo-card .play-btn {
+    width: 90px;
+  }
+  .trendingvideo-card .play-btn {
+    width: 85px;
+  }
+}
+
+@media screen and (width < 1000px) {
+  .trendingvideo-card .play-btn {
+    width: 70px;
+  }
+}
+
+@media screen and (width < 900px) {
+  .trendingvideo-card {
+    height: 360px;
+  }
+}
+
+@media screen and (width<= 800px) {
+  .trendingvideo-card {
+    height: 360px;
+  }
+}

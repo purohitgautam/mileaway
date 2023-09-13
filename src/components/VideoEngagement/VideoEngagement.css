@@ -1,0 +1,51 @@
+.video-engagement {
+  position: relative;
+}
+.video-engagement .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video-engagement .like,
+.video-engagement .comment,
+.video-engagement .share {
+  display: flex;
+  flex-direction: column;
+  /* width: max-content; */
+  align-items: center;
+  justify-content: center;
+}
+
+.video-engagement .like span,
+.video-engagement .comment span,
+.video-engagement .share span {
+  color: #000;
+  font-family: Geomanist;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 192.308% */
+}
+
+@media screen and (width < 900px) {
+  .video-engagement .like svg,
+  .video-engagement .comment svg,
+  .video-engagement .share svg {
+    width: 18px;
+    height: 18px;
+  }
+  .video-engagement .like span,
+  .video-engagement .comment span,
+  .video-engagement .share span {
+    font-size: 10px;
+  }
+}
+
+@media screen and (width < 700px) {
+  .video-engagement .like span,
+  .video-engagement .comment span,
+  .video-engagement .share span {
+    font-size: 10px;
+  }
+}

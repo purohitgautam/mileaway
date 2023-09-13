@@ -1,0 +1,103 @@
+.plan {
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 26px;
+}
+
+.plan .price span:first-child {
+  color: var(--main-color, #242a3a);
+  font-family: Geomanist;
+  font-size: 36px;
+  margin-right: 11px;
+}
+
+.plan .price span:last-child {
+  color: #848199;
+  font-family: Avenir;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.plan .title {
+  margin: 15px 0 21px 0;
+  color: var(--main-color, #242a3a);
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.plan .description {
+  margin: 0;
+  color: var(--main-color, #242a3a);
+  font-family: Geomanist;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.plan ul {
+  margin: 28px 0 23px;
+  padding: 0;
+  list-style: none;
+}
+
+.plan ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.plan ul li span {
+  color: var(--text-color, #858687);
+  font-family: Geomanist;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.plan .choose-plan {
+  text-align: center;
+}
+
+.plan .choose-plan button {
+  height: 50.4px;
+  border-radius: 73px;
+  border: 0px solid rgba(216, 216, 216, 0.1);
+  /* opacity: 0.1; */
+  background: rgba(216, 216, 216, 0.1);
+  color: var(--main-color, #242a3a);
+  margin: 0 auto;
+  padding: 0;
+  font-family: Geomanist;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media screen and (width < 1400px) {
+  .plan {
+    padding: 25px;
+  }
+}
+
+@media screen and (width < 1300px) {
+  .plan {
+    padding: 35px;
+  }
+}
+
+@media screen and (width < 550px) {
+  .plan {
+    border-radius: 26px;
+    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.1);
+  }
+  /* .plan .choose-plan button {
+    width: 234px;
+  } */
+}
+
+@media screen and (width < 400px) {
+  .plan {
+    padding: 25px;
+  }
+  /* .plan .choose-plan button {
+    width: 179px;
+  } */
+}

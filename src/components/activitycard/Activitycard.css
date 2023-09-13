@@ -1,0 +1,25 @@
+.activity-card {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
+  padding: 17px 17px 29px;
+}
+.activity-card .image img {
+  width: 100%;
+  object-fit: cover;
+}
+.activity-card h3 {
+  color: #000;
+  font-family: Geomanist;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 3.24px;
+  margin: 18px 0 11px;
+}
+.activity-card span {
+  color: #767676;
+  font-family: Geomanist;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 2.88px;
+}

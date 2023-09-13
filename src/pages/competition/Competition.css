@@ -1,0 +1,35 @@
+.competition-timing button {
+  height: 48px;
+  color: #000;
+  text-align: center;
+  font-family: Geomanist;
+  font-size: 18px;
+  letter-spacing: 3.24px;
+  background: #fff;
+  box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.12);
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.competition-timing button.active {
+  background: #242a3a;
+  color: #fff;
+}
+.competition-timing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 59px;
+}
+
+@media screen and (width < 1000px) {
+  .competition-timing {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (width < 700px) {
+  .competition-timing button {
+    font-size: 14px;
+  }
+}

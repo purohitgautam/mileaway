@@ -1,0 +1,5 @@
+@media screen and (width < 600px) {
+  .other .card-container {
+    margin-top: 20px;
+  }
+}

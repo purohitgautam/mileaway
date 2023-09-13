@@ -1,0 +1,67 @@
+.trending {
+  margin-bottom: 103px;
+}
+
+.trending .trending-videos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 42px;
+}
+.trending .trendingvideo-card {
+  height: 424px;
+}
+
+@media screen and (width < 1200px) {
+  .trending .trending-videos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (width < 1000px) {
+  .trending .trendingvideo-card {
+    height: 390px;
+  }
+}
+
+@media screen and (width < 900px) {
+  .trending .trendingvideo-card {
+    height: 350px;
+  }
+}
+
+@media screen and (width < 800px) {
+  .trending .trendingvideo-card {
+    height: 424px;
+  }
+  .trending .trending-videos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (width < 700px) {
+  .trending .trendingvideo-card {
+    height: 390px;
+  }
+}
+
+@media screen and (width < 600px) {
+  .trending .trendingvideo-card {
+    height: 345px;
+  }
+}
+
+@media screen and (width < 500px) {
+  .trending .trending-videos {
+    grid-template-columns: 1fr;
+  }
+  .trending .trendingvideo-card {
+    height: 424px;
+  }
+}
+
+@media screen and (width < 400px) {
+  .trending .trending-videos {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

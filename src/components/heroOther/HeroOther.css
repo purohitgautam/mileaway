@@ -1,0 +1,77 @@
+.hero-other {
+  height: 80vh;
+  position: relative;
+}
+.hero-other > .hero-image {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+.hero-other .clouds-image {
+  position: absolute;
+  z-index: -1;
+  bottom: -285px;
+  left: 0;
+  width: 100%;
+}
+.hero-other .clouds-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.hero-other .title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.hero-other .title h3 {
+  margin: 0;
+  color: var(--White, #fff);
+  font-family: Playfair Display;
+  font-size: 75px;
+  font-weight: 800;
+}
+
+@media screen and (width < 1400px) {
+  .hero-other .clouds-image {
+    bottom: -150px;
+  }
+}
+
+@media screen and (width < 1100px) {
+  .hero-other .title h3 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (width < 900px) {
+  .hero-other .title h3 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (width < 700px) {
+  .hero-other .clouds-image {
+    bottom: -30px;
+  }
+  .hero-other .title h3 {
+    font-size: 35px;
+  }
+  .hero-other .title .title-frame {
+    width: 268px;
+    height: 17px;
+  }
+}
